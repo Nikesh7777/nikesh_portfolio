@@ -13,7 +13,7 @@
         <img src="assets/IMG_5359.jpg" alt="Profile" class="avatar" />
         <div>
           <h1>Nikesh Adhikari</h1>
-          <p class="muted">Software Engineer — Warabi-shi, Saitama, Japan</p>
+          <p class="muted">Software Engineer</p>
         </div>
       </div>
       <nav class="nav">
@@ -22,6 +22,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <button id="themeToggle" class="action-btn" type="button">Light</button>
       </nav>
     </div>
   </header>
@@ -34,16 +35,90 @@
 
     <section id="skills" class="card">
       <h2>Technical Skills</h2>
-      <ul class="skills-list">
-        <li>Programming: Java, Python, C#, JavaScript</li>
-        <li>Frameworks & Libraries: Spring Boot, Angular, Node.js, Android</li>
-        <li>Databases: MySQL, PostgreSQL, Oracle</li>
-        <li>Cloud: AWS Lambda, AWS S3</li>
-        <li>Testing & QA: API testing, Integration testing, Regression testing, Automated testing</li>
-        <li>Tools & Platforms: Jira, ServiceNow, Tomcat, SVN, Visual Studio, VS Code, A5:SQL</li>
-        <li>Methodologies: Agile/Scrum, Requirements Analysis, Release Planning</li>
-      </ul>
-      
+
+      <div class="skills-category">
+        <h3>Programming</h3>
+        <ul class="technical-skills-list">
+          <li>Java</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="skills-category">
+        <h3>Frameworks & Libraries</h3>
+        <ul class="technical-skills-list">
+          <li>Spring Boot</li>
+          <li>Angular</li>
+          <li>Node.js</li>
+          <li>Android</li>
+        </ul>
+      </div>
+
+      <div class="skills-category">
+        <h3>Databases</h3>
+        <ul class="technical-skills-list">
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>Oracle</li>
+        </ul>
+      </div>
+
+      <div class="skills-category">
+        <h3>Cloud</h3>
+        <ul class="technical-skills-list">
+          <li>AWS Lambda</li>
+          <li>AWS S3</li>
+        </ul>
+      </div>
+        <div class="skills-category">
+        <h3>Testing & QA</h3>
+        <ul class="technical-skills-list">
+          <li>API Testing</li>
+          <li>Intergration Testing</li>
+          <li>Regression Testing</li>
+          <li>Automated Testing</li>
+        </ul>
+      </div>
+        <div class="skills-category">
+        <h3>Tools & Platforms</h3>
+        <ul class="technical-skills-list">
+          <li>Jira</li>
+          <li>ServiceNow</li>
+          <li>Tomcat</li>
+          <li>Tortoise SVN</li>
+          <li>Visual Studio</li>
+          <li>Vs Code</li>
+          <li>A5:SQL</li>        
+        </ul>
+      </div>
+        <div class="skills-category">
+        <h3>Methodologies</h3>
+        <ul class="technical-skills-list">
+          <li>Agile/Scrum</li>
+          <li>Requirements Analysis</li>
+          <li>Release Planning</li>
+          <li>Gxp</li>
+        </ul>
+      </div> 
+
+     <h2>Professional Skills</h2> 
+     <ul class="professional-skills-list">
+          <li>Stakeholder Communication & Requirement Gathering</li>
+          <li>Mentoring & Knowledge Sharing</li>
+          <li>Cross-Team Collaboration</li>
+          <li>Team Leadership & Project Coordination</li>
+          <li>Project Planning & Execution</li>
+        </ul>
+        <h2>Soft Skills</h2> 
+     <ul class="soft-skills-list">
+          <li>Problem Solving & Analytical Thinking</li>
+          <li>Time Management & Prioritization</li>
+          <li>Adaptability & Continuous Learning</li>
+          <li>Attention to Detail</li>
+          <li>Effective Communication & Interpersonal Skills</li>
+        </ul>
     </section>
 
     <section id="experience" class="card">
@@ -68,7 +143,7 @@
           <li>Translated complex business requirements into actionable technical specifications, ensuring alignment with organizational goals.</li>
         </ul>
       </div>
-      <div class='job'><h3>Software Engineer — <span class='company'>Previous Employer</span></h3><p class='period'>April 2020 - April 2022</p>
+      <div class='job'><h3>Software Engineer — <span class='company'>TechnoPro Engineering</span></h3><p class='period'>April 2020 - April 2022</p>
         <ul>
           <li>Redeveloped an enterprise workflow system on a configuration-driven no-code platform, adding enhanced features and improved efficiency.</li>
           <li>Designed complex workflows, user interfaces, and conditional business logic (IF/ELSE rules) through platform configuration.</li>
@@ -88,9 +163,60 @@
       </div>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <p>Project details can be added here. Example projects: Personal portfolio, Web apps using Angular, REST APIs with Spring Boot.</p>
+     <section id="projects" class="card">
+      <h2><span class="section-accent"></span> Projects</h2>
+      <div class="projects-grid">
+        <!-- each .job stays as a grid item -->
+        <div class="job fade-up">
+        <h3>Dealer Target & Complaint Management Systems — Application Lead</h3>
+        <ul>
+          <li>Led full-stack delivery (Vb.net & Classic ASP); improved complaint resolution time by introducing automated workflows.</li>
+          <li>Coordinated cross-team releases and code reviews to ensure timely delivery.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Certification Sharing System — Developer</h3>
+        <ul>
+          <li>Built REST APIs (Spring Boot) and Angular UI; automated validation with AWS Lambda to reduce manual checks.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Pfizer HCP Portal — QA Team Member</h3>
+        <ul>
+          <li>Executed API/integration/regression tests and automated recurring test cases to improve release stability.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Home Center System — Developer</h3>
+        <ul>
+          <li>Implemented Angular UI improvements and backend optimizations (Java, AWS S3) to speed up checkout flows.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Workflow System Redevelopment — Developer</h3>
+        <ul>
+          <li>Redeveloped enterprise workflows on a no-code platform; integrated with Oracle DB and completed integration testing.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Waterway Inspection Support — Mobile App Developer</h3>
+        <ul>
+          <li>Developed Android app with offline/online sync (Postgres backend); improved field data reliability.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Working Hour Management — Developer</h3>
+        <ul>
+          <li>Built responsive web UI with role-based access, integrated Oracle backend, and added dashboards for managers.</li>
+        </ul>
+      </div>
+
     </section>
 
     <section id="contact" class="card">

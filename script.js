@@ -1,12 +1,21 @@
 
 // Simple JS for smooth scrolling and future enhancements
-document.querySelectorAll('.nav a').forEach(a=>{
-  a.addEventListener('click', e=>{
-    e.preventDefault();
-    const href = a.getAttribute('href');
-    const target = document.querySelector(href);
-    if(target){
-      target.scrollIntoView({behavior:'smooth', block:'start'});
-    }
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  // simple scroll reveal
+  const items = document.querySelectorAll('.card, .job, .skills-category');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible','fade-up');
+    });
+  }, { threshold: 0.12 });
+  items.forEach(i => io.observe(i));
+
+  // optional theme toggle if you add a button with id themeToggle
+  const tbtn = document.getElementById('themeToggle');
+  if (tbtn) {
+    tbtn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      tbtn.textContent = document.body.classList.contains('light-mode') ? 'Dark' : 'Light';
+    });
+  }
 });
