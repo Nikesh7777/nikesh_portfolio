@@ -31,15 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
               }, 800);
             } else {
               // If second prompt "No" → show 100 alerts
-              for (let i = 0; i < 100; i++) {
-                alert("You're a big liar.");
+              for (let i = 0; i < 1; i++) {
+                alert("Thank you for your consideration.");
               }
             }
           });
         } else {
           // If first prompt "No" → show 50 alerts
-          for (let i = 0; i < 50; i++) {
-            alert("I love you aalu");
+          for (let i = 0; i < 1; i++) {
+            alert("Thank you for your consideration.");
           }
         }
       });
