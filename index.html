@@ -22,7 +22,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <button id="themeToggle" class="action-btn" type="button">Light</button>
+       <button id="themeToggle" class="action-btn" type="button" aria-pressed="false">Light</button>
       </nav>
     </div>
   </header>
@@ -166,65 +166,119 @@
      <section id="projects" class="card">
       <h2><span class="section-accent"></span> Projects</h2>
       <div class="projects-grid">
-        <!-- each .job stays as a grid item -->
-        <div class="job fade-up">
-        <h3>Dealer Target & Complaint Management Systems — Application Lead</h3>
-        <ul>
-          <li>Led full-stack delivery (Vb.net & Classic ASP); improved complaint resolution time by introducing automated workflows.</li>
-          <li>Coordinated cross-team releases and code reviews to ensure timely delivery.</li>
-        </ul>
-      </div>
 
-      <div class="job">
-        <h3>Certification Sharing System — Developer</h3>
-        <ul>
-          <li>Built REST APIs (Spring Boot) and Angular UI; automated validation with AWS Lambda to reduce manual checks.</li>
-        </ul>
-      </div>
+        <!-- first project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Dealer Target & Complaint Management Systems — Application Lead</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Led full-stack delivery (VB.NET & Classic ASP); improved complaint resolution time by introducing automated workflows.</li>
+              <li>Coordinated cross-team releases and code reviews to ensure timely delivery.</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="job">
-        <h3>Pfizer HCP Portal — QA Team Member</h3>
-        <ul>
-          <li>Executed API/integration/regression tests and automated recurring test cases to improve release stability.</li>
-        </ul>
-      </div>
+        <!-- second project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Certification Sharing System — Developer</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Built REST APIs (Spring Boot) and Angular UI; automated validation with AWS Lambda to reduce manual checks.</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="job">
-        <h3>Home Center System — Developer</h3>
-        <ul>
-          <li>Implemented Angular UI improvements and backend optimizations (Java, AWS S3) to speed up checkout flows.</li>
-        </ul>
-      </div>
+        <!-- third project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Pfizer HCP Portal — QA Team Member</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Executed API, integration, and regression tests; automated recurring test cases to improve release stability.</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="job">
-        <h3>Workflow System Redevelopment — Developer</h3>
-        <ul>
-          <li>Redeveloped enterprise workflows on a no-code platform; integrated with Oracle DB and completed integration testing.</li>
-        </ul>
-      </div>
+        <!-- fourth project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Home Center System — Developer</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Implemented Angular UI improvements and backend optimizations (Java, AWS S3) to speed up checkout flows.</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="job">
-        <h3>Waterway Inspection Support — Mobile App Developer</h3>
-        <ul>
-          <li>Developed Android app with offline/online sync (Postgres backend); improved field data reliability.</li>
-        </ul>
-      </div>
+        <!-- fifth project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Workflow System Redevelopment — Developer</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Redeveloped enterprise workflows on a no-code platform; integrated with Oracle DB and completed integration testing.</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="job">
-        <h3>Working Hour Management — Developer</h3>
-        <ul>
-          <li>Built responsive web UI with role-based access, integrated Oracle backend, and added dashboards for managers.</li>
-        </ul>
-      </div>
+        <!-- sixth project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Waterway Inspection Support — Mobile App Developer</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Developed Android app with offline/online sync (Postgres backend); improved field data reliability.</li>
+            </ul>
+          </div>
+        </div>
 
+        <!-- seventh project -->
+        <div class="job">
+          <button class="project-toggle" aria-expanded="false">
+            <h3>Working Hour Management — Developer</h3>
+            <span class="chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="project-details" aria-hidden="true">
+            <ul>
+              <li>Built responsive web UI with role-based access, integrated Oracle backend, and added dashboards for managers.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div> <!-- .projects-grid -->
     </section>
 
     <section id="contact" class="card">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:samaye05@gmail.com">Email Me</a></p>
-     <a href="assets/Nikesh CV.pdf" download>Download Resume (MD)</a>
+     <div class="contact-actions">
+  <a href="mailto:samaye05@gmail.com" class="action-btn glass-btn">
+    ✉️ Email Me
+  </a>
+  <a href="https://www.linkedin.com/in/nikesh-a-6734a7228/?trk=opento_sprofile_details" target="_blank" class="glass-btn">
+    💼 LinkedIn
+  </a>
+  <a href="assets/Nikesh CV.pdf" download class="action-btn glass-btn secondary">
+    📄 Download CV
+  </a>
+</div>
     </section>
   </main>
+
+  
 
   <footer class="site-footer">
     <div class="container">
