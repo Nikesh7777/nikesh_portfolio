@@ -1,295 +1,467 @@
-
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nikesh Adhikari - Software Engineer</title>
+  <title>Nikesh Adhikari — Software Engineer</title>
   <link rel="stylesheet" href="profile.css" />
 </head>
-<body>
+<body class="light-mode">
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <div class="grain"></div>
+
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="Home">
         <img src="assets/IMG_5359.jpg" alt="Profile" class="avatar" />
-        <div>
+        <div class="brand-meta">
           <h1>Nikesh Adhikari</h1>
           <p class="muted">Software Engineer</p>
         </div>
-      </div>
-      <nav class="nav">
+      </a>
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
-       <button id="themeToggle" class="action-btn" type="button" aria-pressed="false">Light</button>
+        <button id="themeToggle" class="chip-btn" type="button" aria-pressed="true">Light</button>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p> Dynamic Full-Stack Software Engineer with over 5 years of comprehensive experience in development, quality assurance, and team leadership. Expertise includes a diverse technology stack, such as Java, Spring Boot, Angular, Python, AWS, and modern databases, facilitating the consistent delivery of robust enterprise systems while enhancing QA efficiency. Proven track record in leading cross-functional teams to achieve project goals and drive innovation. Prepared to leverage technical expertise and leadership capabilities to make a significant impact in IT landscape.</p>
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero card fade-up">
+      <div class="hero-left">
+        <h2 class="hero-title">
+          Building <span class="grad-text">reliable</span>, <span class="grad-text-2">scalable</span> enterprise systems.
+        </h2>
+        <p class="hero-sub">
+          Full-stack & application lead across <b>Java</b>, <b>Spring Boot</b>, <b>Angular</b>, and <b>AWS</b>. Based in Japan since 2015.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <ul class="hero-stats">
+        <li><span>5+</span> Years Experience</li>
+        <li><span>N2</span> JLPT</li>
+        <li><span>890</span> TOEIC</li>
+      </ul>
     </section>
 
-    <section id="skills" class="card">
-      <h2>Technical Skills</h2>
+    <!-- ABOUT (new, cleaner) -->
+    <section id="about" class="card about-clean fade-up">
+      <header class="section-header">
+        <h2><span class="underline"></span>About</h2>
+      </header>
 
-      <div class="skills-category">
-        <h3>Programming</h3>
-        <ul class="technical-skills-list">
-          <li>Java</li>
-          <li>Python</li>
-          <li>C#</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
+      <div class="about-wrap">
+        <div class="about-text">
+          <p class="lead">
+            Results-driven <b>Software Engineer & Application Lead</b> with 5+ years in the ICT industry.
+            I own the end-to-end SDLC—requirements, design, development, QA, deployment, and post-production support—to deliver robust, maintainable systems.
+          </p>
+          <p>
+            Strengths in <b>Java/Spring Boot</b>, <b>Angular</b>, and <b>AWS</b>. I translate business needs into clear technical decisions,
+            lead cross-functional teams, and keep a practical focus on performance, security, and reliability.
+          </p>
 
-      <div class="skills-category">
-        <h3>Frameworks & Libraries</h3>
-        <ul class="technical-skills-list">
-          <li>Spring Boot</li>
-          <li>Angular</li>
-          <li>Node.js</li>
-          <li>Android</li>
-        </ul>
-      </div>
+          <div class="keypoints">
+            <ul>
+              <li><b>Core:</b> Full-stack dev, QA automation, release management, stakeholder communication</li>
+              <li><b>Stack:</b> Java, Spring Boot, Angular, Python, AWS (Lambda, S3), MySQL, PostgreSQL, Oracle</li>
+              <li><b>Path:</b> 2 yrs Dev → 2 yrs Quality Assurance → 0.5 yrs Dev → 1 yr Application Lead (360° perspective)</li>
+              <li><b>Certs:</b> JLPT N2, TOEIC 890</li>
+            </ul>
+            <ul>
+              <li><b>Leadership:</b> Mentoring, code reviews, planning, stakeholder sync</li>
+              <li><b>Quality:</b> API/Integration/Regression testing, Postman, test planning, automation</li>
+              <li><b>Delivery:</b> Agile/Scrum, incident-free operations, clean releases</li>
+              <li><b>Cloud/DevOps:</b> AWS Lambda/S3, Jenkins, Tomcat, Git/GitHub, SVN</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="skills-category">
-        <h3>Databases</h3>
-        <ul class="technical-skills-list">
-          <li>MySQL</li>
-          <li>PostgreSQL</li>
-          <li>Oracle</li>
-        </ul>
-      </div>
-
-      <div class="skills-category">
-        <h3>Cloud</h3>
-        <ul class="technical-skills-list">
-          <li>AWS Lambda</li>
-          <li>AWS S3</li>
-        </ul>
-      </div>
-        <div class="skills-category">
-        <h3>Testing & QA</h3>
-        <ul class="technical-skills-list">
-          <li>API Testing</li>
-          <li>Intergration Testing</li>
-          <li>Regression Testing</li>
-          <li>Automated Testing</li>
-        </ul>
-      </div>
-        <div class="skills-category">
-        <h3>Tools & Platforms</h3>
-        <ul class="technical-skills-list">
-          <li>Jira</li>
-          <li>ServiceNow</li>
-          <li>Tomcat</li>
-          <li>Tortoise SVN</li>
-          <li>Visual Studio</li>
-          <li>Vs Code</li>
-          <li>A5:SQL</li>        
-        </ul>
-      </div>
-        <div class="skills-category">
-        <h3>Methodologies</h3>
-        <ul class="technical-skills-list">
-          <li>Agile/Scrum</li>
-          <li>Requirements Analysis</li>
-          <li>Release Planning</li>
-          <li>Gxp</li>
-        </ul>
-      </div> 
-
-     <h2>Professional Skills</h2> 
-     <ul class="professional-skills-list">
-          <li>Stakeholder Communication & Requirement Gathering</li>
-          <li>Mentoring & Knowledge Sharing</li>
-          <li>Cross-Team Collaboration</li>
-          <li>Team Leadership & Project Coordination</li>
-          <li>Project Planning & Execution</li>
-        </ul>
-        <h2>Soft Skills</h2> 
-     <ul class="soft-skills-list">
-          <li>Problem Solving & Analytical Thinking</li>
-          <li>Time Management & Prioritization</li>
-          <li>Adaptability & Continuous Learning</li>
-          <li>Attention to Detail</li>
-          <li>Effective Communication & Interpersonal Skills</li>
-        </ul>
-    </section>
-
-    <section id="experience" class="card">
-      <h2>Experience</h2>
-      <div class='job'><h3>Software Engineer — <span class='company'>Tata Consultancy Services Japan</span></h3><p class='period'>May 2022 - Present</p>
-        <ul>
-          <li>Developed and optimized enterprise applications using Java and Spring Framework, enhancing system performance, scalability, and user experience.</li>
-          <li>Built RESTful APIs using Spring Boot and designed responsive user interfaces with Angular, delivering seamless integration across modules.</li>
-          <li>Integrated AWS Lambda functions to automate validation, data processing, and workflow execution, reducing manual intervention.</li>
-          <li>Enhanced backend operations with Java, Python, and AWS S3, improving efficiency and data management capabilities.</li>
-          <li>Delivered front-end performance improvements and responsive UI enhancements using Angular, ensuring a consistent user experience.</li>
-          <li>Executed comprehensive API, integration, and regression testing to ensure software stability and compliance.</li>
-          <li>Automated recurring QA test cases, significantly reducing manual testing efforts and improving release cycle efficiency.</li>
-          <li>Validated business workflows and backend data consistency to maintain system reliability and data integrity.</li>
-          <li>Coordinated project schedules, milestones, and dependencies between IT and business teams, ensuring smooth project execution.</li>
-          <li>Produced requirement documentation and facilitated stakeholder sessions to align technical solutions with business objectives.</li>
-          <li>Led code reviews and supervised testing activities, maintaining high-quality standards across development teams.</li>
-          <li>Collaborated with business analysts and stakeholders to refine requirements and enhance application usability.</li>
-          <li>Improved performance of checkout, certification, and inventory modules through targeted code optimization and refactoring.</li>
-          <li>Led cross-functional Agile teams to implement iterative software development processes, improving project delivery timelines and collaboration efficiency.</li>
-          <li>Mentored junior engineers in software design principles, coding best practices, and Agile methodologies, fostering continuous learning and growth that promoted knowledge sharing and improved code quality.</li>
-          <li>Translated complex business requirements into actionable technical specifications, ensuring alignment with organizational goals.</li>
-        </ul>
-      </div>
-      <div class='job'><h3>Software Engineer — <span class='company'>TechnoPro Engineering</span></h3><p class='period'>April 2020 - April 2022</p>
-        <ul>
-          <li>Redeveloped an enterprise workflow system on a configuration-driven no-code platform, adding enhanced features and improved efficiency.</li>
-          <li>Designed complex workflows, user interfaces, and conditional business logic (IF/ELSE rules) through platform configuration.</li>
-          <li>Integrated the no-code platform with an Oracle database backend for seamless data processing and reporting.</li>
-          <li>Performed integration testing, debugging, and documentation for new workflows, ensuring system reliability.</li>
-          <li>Developed an Android application for waterway inspection, supporting field inspectors with real-time and offline capabilities.</li>
-          <li>Implemented offline/online data synchronization with a PostgreSQL backend for reliable field operations.</li>
-          <li>Executed unit tests for mobile applications, ensuring stable releases and minimal production issues.</li>
-          <li>Built responsive web UIs with secure login and role-based access control for working hour management systems.</li>
-          <li>Integrated backend systems with Oracle DB and deployed applications on Tomcat servers.</li>
-          <li>Implemented dashboards and reporting tools to support managerial decision-making and operational insights.</li>
-          <li>Developed and maintained web applications using JavaScript and Python, improving user experience and system functionality.</li>
-          <li>Collaborated in Agile teams to design software architecture and improve project delivery timelines.</li>
-          <li>Implemented automated testing procedures, ensuring code reliability and reducing deployment errors.</li>
-          <li>Participated in code reviews and debugging sessions, fostering a culture of learning and continuous improvement.</li>
+        <ul class="metrics">
+          <li><span>10+</span> Enterprise modules shipped</li>
+          <li><span>30%+</span> Faster releases via QA</li>
+          <li><span>0</span> P1 incidents (last 12 mo)</li>
+          <li><span>5+</span> Years hands-on SDLC</li>
+          <li><span>100%CSI</span> 4 times in a row</li>
         </ul>
       </div>
     </section>
 
-     <section id="projects" class="card">
-      <h2><span class="section-accent"></span> Projects</h2>
+    <!-- SKILLS (tabs + search that overrides tab) -->
+    <section id="skills" class="card skills-pro fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Skills</h2>
+      </div>
+
+      <div class="skill-toolbar">
+        <div class="tabs" role="tablist" aria-label="Skill categories">
+          <button class="tab is-active" data-skill-filter="core"  role="tab" aria-selected="true">Core</button>
+          <button class="tab" data-skill-filter="backend" role="tab">Backend & APIs</button>
+          <button class="tab" data-skill-filter="frontend" role="tab">Frontend</button>
+          <button class="tab" data-skill-filter="cloud"   role="tab">Cloud & DevOps</button>
+          <button class="tab" data-skill-filter="db"      role="tab">Databases</button>
+          <button class="tab" data-skill-filter="qa"      role="tab">QA & Testing</button>
+          <button class="tab" data-skill-filter="lead"    role="tab">Leadership & Process</button>
+          <button class="tab" data-skill-filter="tools"   role="tab">Tools</button>
+          <button class="tab" data-skill-filter="lang"    role="tab">Communication</button>
+          <button class="tab" data-skill-filter="all"     role="tab">All</button>
+        </div>
+        <div class="skill-search">
+          <input id="skillSearch" type="search" placeholder="Search skills… (e.g., English)" aria-label="Search skills" />
+        </div>
+      </div>
+
+      <div id="skillNotice" class="skill-notice" hidden>
+        Searching across <b>all</b> categories. Clear search to return to the selected tab.
+      </div>
+
+      <div class="skillboard" id="skillboard">
+        <article class="skillcard" data-group="core">
+          <header><h3>Core Stack</h3></header>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Angular</li><li>TypeScript</li><li>Python</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="backend">
+          <header><h3>Backend & APIs</h3></header>
+          <ul class="tags"><li>REST APIs</li><li>API Development</li><li>Release Management</li><li>Tomcat</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="frontend">
+          <header><h3>Frontend</h3></header>
+          <ul class="tags"><li>Angular</li><li>AngularJS</li><li>HTML5</li><li>CSS</li><li>Responsive UI</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="cloud">
+          <header><h3>Cloud & DevOps</h3></header>
+          <ul class="tags"><li>AWS Lambda</li><li>Amazon S3</li><li>Jenkins</li><li>Git</li><li>GitHub</li><li>SVN (TortoiseSVN)</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="db">
+          <header><h3>Databases</h3></header>
+          <ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>Oracle 12</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="qa">
+          <header><h3>QA & Testing</h3></header>
+          <ul class="tags">
+            <li>API Testing</li><li>Integration Testing</li><li>Regression Testing</li>
+            <li>QA Automation</li><li>Test Planning</li><li>Postman</li><li>Test Cases</li>
+          </ul>
+        </article>
+
+        <article class="skillcard" data-group="lead">
+          <header><h3>Leadership & Process</h3></header>
+          <ul class="tags">
+            <li>Application Lead</li><li>Team Management</li><li>Leading Development Teams</li>
+            <li>Agile/Scrum</li><li>Stakeholder Management</li><li>Business Analysis</li><li>Release Management</li>
+          </ul>
+        </article>
+
+        <article class="skillcard" data-group="tools">
+          <header><h3>Tools</h3></header>
+          <ul class="tags"><li>Jira</li><li>VS Code</li><li>Visual Studio</li><li>Excel/PowerPoint/Word</li><li>VBA Excel</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="lang">
+          <header><h3>Communication</h3></header>
+          <ul class="tags"><li>English</li><li>Japanese (JLPT N2)</li></ul>
+        </article>
+
+        <article class="skillcard" data-group="core backend frontend cloud db qa lead tools lang">
+          <header><h3>Additional</h3></header>
+          <ul class="tags">
+            <li>Agile & Waterfall</li><li>Ionic Framework</li><li>Mobile App Dev</li>
+            <li>Manual Testing</li><li>Quality Assurance</li><li>System Testing</li>
+            <li>Change Management</li><li>Customer Support</li><li>GxP</li>
+          </ul>
+        </article>
+      </div>
+      <p id="skillEmpty" class="skill-empty" hidden>No skills match your search.</p>
+    </section>
+
+    <!-- EXPERIENCE (unchanged from your last good version) -->
+    <section id="experience" class="card fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="node"></div>
+          <div class="tcard tilt">
+            <div class="job-header">
+              <h3>Software Engineer — <span class="company">Tata Consultancy Services Japan</span></h3>
+              <span class="period">May 2022 – Present</span>
+            </div>
+            <p class="roles">Application Lead / Software Engineer / QA Engineer</p>
+            <ul class="bullets">
+              <li>Developed and optimized enterprise applications using Java and Spring Framework, enhancing system performance, scalability, and user experience.</li>
+              <li>Built RESTful APIs using Spring Boot and designed responsive user interfaces with Angular, delivering seamless integration across modules.</li>
+              <li>Integrated AWS Lambda functions to automate validation, data processing, and workflow execution, reducing manual intervention.</li>
+              <li>Enhanced backend operations with Java, Python, and AWS S3, improving efficiency and data management capabilities.</li>
+              <li>Delivered front-end performance improvements and responsive UI enhancements using Angular, ensuring a consistent user experience.</li>
+              <li>Executed comprehensive API, integration, and regression testing to ensure software stability and compliance.</li>
+              <li>Automated recurring QA test cases, significantly reducing manual testing efforts and improving release cycle efficiency.</li>
+              <li>Validated business workflows and backend data consistency to maintain system reliability and data integrity.</li>
+              <li>Coordinated project schedules, milestones, and dependencies between IT and business teams, ensuring smooth project execution.</li>
+              <li>Produced requirement documentation and facilitated stakeholder sessions to align technical solutions with business objectives.</li>
+              <li>Led code reviews and supervised testing activities, maintaining high-quality standards across development teams.</li>
+              <li>Collaborated with business analysts and stakeholders to refine requirements and enhance application usability.</li>
+              <li>Improved performance of checkout, certification, and inventory modules through targeted code optimization and refactoring.</li>
+              <li>Led cross-functional Agile teams to implement iterative software development processes, improving project delivery timelines and collaboration efficiency.</li>
+              <li>Mentored junior engineers in software design principles, coding best practices, and Agile methodologies, fostering continuous learning and growth that promoted knowledge sharing and improved code quality.</li>
+              <li>Translated complex business requirements into actionable technical specifications, ensuring alignment with organizational goals.</li>
+            </ul>
+            <div class="stack"><b>Tech:</b> Java, Spring Boot, Angular, Python, AWS (Lambda, S3), MySQL, PostgreSQL, Jenkins, Tomcat, Jira, SVN</div>
+
+            <div class="subprojects">
+              <h4 class="subheading">Major Projects</h4>
+              <ul class="project-list">
+                <li>
+                  <b>Dealer Target Management & Customer Complaint System</b> — Led two enterprise apps concurrently; managed requirements, releases, and team activities as Application Lead.
+                  <span class="proj-tech">Stack: VB.NET / Classic ASP (legacy), Oracle, CI/CD, QA automation</span>
+                </li>
+                <li>
+                  <b>Certification Sharing System</b> — Full-stack features (Angular + Spring Boot); AWS Lambda for serverless validations.
+                  <span class="proj-tech">Stack: Angular, Spring Boot, AWS Lambda, S3, PostgreSQL</span>
+                </li>
+                <li>
+                  <b>Pfizer HCP Portal</b> — API & integration testing; automation via VBA/Postman to ensure stability.
+                  <span class="proj-tech">Stack: Postman, VBA, Jenkins, Test Automation</span>
+                </li>
+                <li>
+                  <b>Home Center System</b> — Responsive UI & backend integration with AWS S3; performance and UX improvements.
+                  <span class="proj-tech">Stack: Java, Angular, AWS S3, MySQL</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="node"></div>
+          <div class="tcard tilt">
+            <div class="job-header">
+              <h3>Software Engineer — <span class="company">TechnoPro Engineering</span></h3>
+              <span class="period">Apr 2020 – Apr 2022</span>
+            </div>
+            <ul class="bullets">
+              <li>Redeveloped an enterprise workflow system on a configuration-driven no-code platform, adding enhanced features and improved efficiency.</li>
+              <li>Designed complex workflows, user interfaces, and conditional business logic (IF/ELSE rules) through platform configuration.</li>
+              <li>Integrated the no-code platform with an Oracle database backend for seamless data processing and reporting.</li>
+              <li>Performed integration testing, debugging, and documentation for new workflows, ensuring system reliability.</li>
+              <li>Developed an Android application for waterway inspection, supporting field inspectors with real-time and offline capabilities.</li>
+              <li>Implemented offline/online data synchronization with a PostgreSQL backend for reliable field operations.</li>
+              <li>Executed unit tests for mobile applications, ensuring stable releases and minimal production issues.</li>
+              <li>Built responsive web UIs with secure login and role-based access control for working hour management systems.</li>
+              <li>Integrated backend systems with Oracle DB and deployed applications on Tomcat servers.</li>
+              <li>Implemented dashboards and reporting tools to support managerial decision-making and operational insights.</li>
+              <li>Developed and maintained web applications using JavaScript and Python, improving user experience and system functionality.</li>
+              <li>Collaborated in Agile teams to design software architecture and improve project delivery timelines.</li>
+              <li>Implemented automated testing procedures, ensuring code reliability and reducing deployment errors.</li>
+              <li>Participated in code reviews and debugging sessions, fostering a culture of learning and continuous improvement.</li>
+            </ul>
+            <div class="stack"><b>Tech:</b> Java, Android, Oracle 12, PostgreSQL, Tomcat, HTML/CSS/JS, SQL, Agile</div>
+
+            <div class="subprojects">
+              <h4 class="subheading">Major Projects</h4>
+              <ul class="project-list">
+                <li>
+                  <b>Working Hour Management System</b> — Secure web-based timesheets; role-based access; reporting.
+                  <span class="proj-tech">Stack: Java, Oracle 12, Tomcat, HTML/CSS/JS</span>
+                </li>
+                <li>
+                  <b>Waterway Inspection Support System</b> — Android app; offline sync to PostgreSQL; improved data accuracy/speed.
+                  <span class="proj-tech">Stack: Android (Java), PostgreSQL, REST, Sync</span>
+                </li>
+                <li>
+                  <b>Workflow System Redevelopment (Reverse Engineering)</b> — Modernized internal workflows for performance & scalability.
+                  <span class="proj-tech">Stack: No-code platform, Oracle, Integration Testing</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PERSONAL PROJECTS (expand on click; links on hover) -->
+    <section id="projects" class="card fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Personal Projects</h2>
+      </div>
+
       <div class="projects-grid">
-
-        <!-- first project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Dealer Target & Complaint Management Systems — Application Lead</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Led full-stack delivery (VB.NET & Classic ASP); improved complaint resolution time by introducing automated workflows.</li>
-              <li>Coordinated cross-team releases and code reviews to ensure timely delivery.</li>
+        <article class="project tilt">
+          <header class="project-head">
+            <h3>Voucher Management (Angular + Spring Boot)</h3>
+            <div class="project-links">
+              <a class="btn ghost" href="https://nikesh7777.github.io" target="_blank" rel="noopener">Live</a>
+              <a class="btn" href="https://github.com/nikesh7777" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <button class="project-toggle" aria-expanded="false"><span class="chev">▾</span></button>
+          </header>
+          <div class="project-body" aria-hidden="true">
+            <ul class="proj-points">
+              <li>Role-based vouchers, multi-step approvals, audit logs, CSV/PDF export.</li>
+              <li>JWT auth, Angular Material, paginated & validated REST APIs.</li>
+              <li>Dockerized services; CI-ready structure and env configs.</li>
             </ul>
+            <div class="stack"><b>Stack:</b> Angular, Spring Boot, PostgreSQL, JWT, Docker</div>
           </div>
-        </div>
+        </article>
 
-        <!-- second project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Certification Sharing System — Developer</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Built REST APIs (Spring Boot) and Angular UI; automated validation with AWS Lambda to reduce manual checks.</li>
+        <article class="project tilt">
+          <header class="project-head">
+            <h3>Expense Approval Management</h3>
+            <div class="project-links">
+              <a class="btn ghost" href="https://nikesh7777.github.io" target="_blank" rel="noopener">Live</a>
+              <a class="btn" href="https://github.com/nikesh7777" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <button class="project-toggle" aria-expanded="false"><span class="chev">▾</span></button>
+          </header>
+          <div class="project-body" aria-hidden="true">
+            <ul class="proj-points">
+              <li>Multi-level approvals, S3 receipt storage, dashboards & analytics.</li>
+              <li>Angular front-end, Spring Boot back-end, PostgreSQL, JWT security.</li>
+              <li>Integration tests, CSV/PDF export, role-based access.</li>
             </ul>
+            <div class="stack"><b>Stack:</b> Angular, Spring Boot, PostgreSQL, AWS S3</div>
           </div>
-        </div>
+        </article>
 
-        <!-- third project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Pfizer HCP Portal — QA Team Member</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Executed API, integration, and regression tests; automated recurring test cases to improve release stability.</li>
+        <article class="project tilt">
+          <header class="project-head">
+            <h3>JLPT Practice Desktop (Python + PostgreSQL)</h3>
+            <div class="project-links">
+              <a class="btn ghost" href="https://nikesh7777.github.io" target="_blank" rel="noopener">Live</a>
+              <a class="btn" href="https://github.com/nikesh7777" target="_blank" rel="noopener">GitHub</a>
+            </div>
+            <button class="project-toggle" aria-expanded="false"><span class="chev">▾</span></button>
+          </header>
+          <div class="project-body" aria-hidden="true">
+            <ul class="proj-points">
+              <li>N5–N1 mock tests with timer, answer review, and score analytics.</li>
+              <li>Login/registration; progress tracking; local DB history.</li>
+              <li>Question bank import and CSV/SQL exports.</li>
             </ul>
+            <div class="stack"><b>Stack:</b> Python (PySide/Tk), PostgreSQL</div>
           </div>
-        </div>
-
-        <!-- fourth project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Home Center System — Developer</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Implemented Angular UI improvements and backend optimizations (Java, AWS S3) to speed up checkout flows.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- fifth project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Workflow System Redevelopment — Developer</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Redeveloped enterprise workflows on a no-code platform; integrated with Oracle DB and completed integration testing.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- sixth project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Waterway Inspection Support — Mobile App Developer</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Developed Android app with offline/online sync (Postgres backend); improved field data reliability.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- seventh project -->
-        <div class="job">
-          <button class="project-toggle" aria-expanded="false">
-            <h3>Working Hour Management — Developer</h3>
-            <span class="chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="project-details" aria-hidden="true">
-            <ul>
-              <li>Built responsive web UI with role-based access, integrated Oracle backend, and added dashboards for managers.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div> <!-- .projects-grid -->
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-     <div class="contact-actions">
-  <a href="mailto:samaye05@gmail.com" class="action-btn glass-btn">
-    ✉️ Email Me
-  </a>
-  <a href="https://www.linkedin.com/in/nikesh-a-6734a7228/?trk=opento_sprofile_details" target="_blank" class="glass-btn">
-    💼 LinkedIn
-  </a>
-  <a href="assets/Nikesh CV.pdf" download class="action-btn glass-btn secondary">
-    📄 Download CV
-  </a>
-</div>
+    <!-- EDUCATION -->
+    <section id="education" class="card fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Education</h2>
+      </div>
+      <div class="grid">
+        <article class="doc-card tilt">
+          <h3>Diploma in Information Technology</h3>
+          <p class="muted-line">Computer Education College (Japan) — 2017–2020</p>
+          <div class="doc-overlay">
+            <button class="btn" data-preview="assets/Graduation_Certificate_1.pdf" type="button">👁️ View</button>
+            <a class="btn ghost" href="assets/Graduation_Certificate_1.pdf" download>⬇️ Download</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="card fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Certificates</h2>
+      </div>
+      <div class="grid">
+        <article class="doc-card tilt">
+          <h3>TOEIC 890</h3>
+          <div class="doc-overlay">
+            <button class="btn" data-preview="assets/TOEIC_890.pdf" type="button">👁️ View</button>
+            <a class="btn ghost" href="assets/TOEIC_890.pdf" download>⬇️ Download</a>
+          </div>
+        </article>
+
+        <article class="doc-card tilt">
+          <h3>JLPT N2</h3>
+          <div class="doc-overlay">
+            <button class="btn" data-preview="assets/JLPT.pdf" type="button">👁️ View</button>
+            <a class="btn ghost" href="assets/JLPT.pdf" download>⬇️ Download</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUMES -->
+    <section id="resume" class="card fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Resume & References</h2>
+      </div>
+      <div class="grid">
+        <article class="doc-card tilt">
+          <h3>English Resume</h3>
+          <div class="doc-overlay">
+            <button class="btn" data-preview="assets/Nikesh_Adhikari_Resume.pdf" type="button">👁️ View</button>
+            <a class="btn ghost" href="assets/Nikesh_Adhikari_Resume.pdf" download>⬇️ Download</a>
+          </div>
+        </article>
+
+        <article class="doc-card tilt">
+          <h3>日本語職務経歴書</h3>
+          <div class="doc-overlay">
+            <button class="btn" data-preview="assets/職務経歴書_アディカリ_ニケス.pdf" type="button">👁️ View</button>
+            <a class="btn ghost" href="assets/職務経歴書_アディカリ_ニケス.pdf" download>⬇️ Download</a>
+          </div>
+        </article>
+
+       <!-- <article class="doc-card tilt"></article>
+          <h3>TechnoPro Reference Letter</h3>
+          <div class="doc-overlay">
+            <button class="btn" data-preview="assets/職務証明書(アディカリ ニケス).pdf" type="button">👁️ View</button>
+            <a class="btn ghost" href="assets/職務証明書(アディカリ ニケス).pdf" download>⬇️ Download</a>
+          </div>
+        </article> -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card fade-up">
+      <div class="section-header">
+        <h2><span class="underline"></span>Contact</h2>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:samaye05@gmail.com" class="btn">✉️ Email</a>
+        <a href="Follow me on LinkedIn: www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=nikesh-a-6734a7228" target="_blank" class="btn ghost">💼 LinkedIn</a>
+        <a href="https://github.com/Nikesh7777" target="_blank" class="btn">🌐 Portfolio</a>
+      </div>
+      <p class="muted-line small">Open to global opportunities (AU/NZ sponsorship welcome).</p>
     </section>
   </main>
 
-  
-
   <footer class="site-footer">
-    <div class="container">
-      <p>© Nikesh Adhikari — Copyright, All rights reserved.</p>
-    </div>
+    <p>© Nikesh Adhikari — All rights reserved.</p>
   </footer>
-<!--git add .
-git commit -m "your message"
-git push origin main-->
+
+  <!-- Document Preview Modal -->
+  <dialog id="docPreview" class="doc-preview" aria-label="Document preview">
+    <div class="doc-preview-inner">
+      <button class="close-preview" aria-label="Close">✕</button>
+      <object id="docObject" data="" type="application/pdf" aria-label="Preview area"></object>
+    </div>
+  </dialog>
+
   <script src="profile.js"></script>
 </body>
 </html>
