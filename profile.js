@@ -34,7 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Reveal on scroll
   const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+    entries.forEach(e => {
+      if (e.isIntersecting){
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
   }, { threshold: 0.12 });
   document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
@@ -135,17 +140,18 @@ document.addEventListener('DOMContentLoaded', () => {
     notice.hidden = false;
     let anyHit = false;
     cards.forEach(c => {
-      const text = c.textContent.toLowerCase();
-      // tag-level filtering
-      let cardHasHit = false;
+      const title = c.querySelector('header h3')?.textContent?.toLowerCase() || '';
       clearTagStates(c);
+      let cardHasHit = false;
       c.querySelectorAll('.tags li').forEach(li => {
         const hit = li.textContent.toLowerCase().includes(term);
-        if (hit){ li.classList.add('tag-hit'); cardHasHit = true; }
-        else { li.classList.add('tag-hidden'); }
+        if (hit){
+          li.classList.add('tag-hit');
+          cardHasHit = true;
+        } else {
+          li.classList.add('tag-hidden');
+        }
       });
-      // Also allow header match (category title)
-      const title = c.querySelector('header h3')?.textContent?.toLowerCase() || '';
       if (title.includes(term)) cardHasHit = true;
 
       showCard(c, cardHasHit);
@@ -160,9 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.skills-pro .tab').forEach(t => t.classList.remove('is-active'));
     btn.classList.add('is-active');
     const group = btn.getAttribute('data-skill-filter') || 'all';
-    // If there is an active search, keep search mode (tab visual changes only)
     if (search && search.value.trim()){
-      // still update currentGroup so clearing search goes back here
       currentGroup = group;
       return applySearch(search.value);
     }
@@ -171,6 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   search?.addEventListener('input', (e) => applySearch(e.target.value));
 
-  // Default: Core tab view
+  // Default view
   applyGroup('core');
 });
